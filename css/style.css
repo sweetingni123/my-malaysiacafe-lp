@@ -1,0 +1,442 @@
+@charset "utf-8";
+
+html {
+  font-size: 1vw;
+}
+
+body {
+  font-family: "游ゴシック体", Arial, sans-serif;
+  background-color: #FFFFFF;
+  max-width: 100%;
+  min-width: 80%;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* 共通事項の設定 */
+#charm, #contents, #introduction, #summary {
+  margin-top: 10%;
+}
+
+.pc-only {
+  display: block !important;
+}
+.sp-only {
+  display: none !important
+
+  ;
+}
+
+h1 {
+  font-family: "Adobe Handwriting";
+  color: #4e3101;
+  font-size: 45px;
+  letter-spacing: 4px;
+  padding: 2%;
+  margin: 0 ;
+}
+
+h2 {
+  color: #cfa972;
+  font-size: 33px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+h3 {
+  color: #d1c0a5;
+  font-size: 26px;
+  letter-spacing: 5px;
+  text-align: left;
+  margin: auto;
+}
+
+/* headerの設定 */
+header {
+  width: 100%;
+  background: #d1c0a5;
+  text-align: center;
+  margin: 0;
+}
+
+/* メインビジュアルの設定 */
+#main-visual {
+  max-width: 100%;
+  max-height: 567px;
+}
+
+.mv, img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* 魅力の設定 */
+.section-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+p.small, p.medium, p.large, p.memo,
+p.cafe {
+  color: #4e3101;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+p.small {
+  font-size: 16px;
+  line-height: 35px;
+  width: 90%;
+  display: inline-block;
+  text-align: left;
+  margin-top: 10%;
+}
+
+p.medium {
+  margin-top: 5%;
+  font-size: 20px;
+  text-align: left;
+}
+
+p.large {
+  margin-top: 5%;
+  font-size: 20px;
+  text-align: center;
+}
+
+img.charm {
+  text-align: right;
+  width: 100%;
+  height: 100%;
+}
+
+.col-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.col-3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+  text-align: center;
+}
+
+div.contents {
+  margin: 20px;
+}
+
+.slick-prev {
+  left: -55px !important;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: #d1c0a5 !important;
+  font-size: 50px !important;
+}
+
+.slide {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+img.cafe {
+  width: 650px;
+  height: 600px;
+}
+
+.card {
+  border-radius: 20px;
+  background: #faf6eb;
+  width: 304px;
+  height: 430px;
+}
+
+ul {
+  margin-top: 5%;
+  padding: 0 37%;
+  text-align: left;
+  /* display: inline-block; */
+  color: #4e3101;
+  background: #d1c0a5;
+  /* width: 100%; */
+  border-radius: 10px
+}
+
+li {
+  font-size: 25px;
+  line-height: 82px;
+  list-style: none;
+}
+
+h4 {
+  font-size: 33px;
+  color: #4e3101;
+  text-align: center;
+  letter-spacing: 4px;
+  padding: 20px;
+  margin-top: 53px;
+}
+
+h5 {
+  font-size: 23px;
+  color: #4e3101;
+  letter-spacing: 4px;
+  padding-top: 10%;
+}
+
+#introduction {
+  text-align: center;
+}
+
+p.cafe {
+  font-size: 17px;
+  line-height: 40px;
+  /* text-align: center; */
+  margin-top: 5%;
+  background-color: #d1c0a5;
+  display: inline-block;
+  min-width: 650px;
+  padding: 5%;
+  border-radius: 10px;
+}
+
+p.memo {
+  font-size: 17px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: left;
+  width: 68%;
+  margin-top: 5%;
+}
+
+a {
+  display: inline-block;
+  color: #4e3101;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin: auto;
+  text-align: center;
+  padding: 3px;
+  border-radius: 10px;
+  background-color: #d1c0a5;
+}
+
+a:hover {
+  color: #d1c0a5;
+  background-color: #4e3101;
+}
+
+#page-top {
+  font-size: 20px;
+}
+
+footer {
+  color: #4e3101;
+  font-size: 20px;
+  line-height: 2;
+  margin-top: 10%;
+  padding: 5% 0%;
+  text-align: center;
+  background: #d1c0a5;
+  font-weight: bold;
+  height: 270px;
+}
+
+div {
+  text-align: center;
+}
+
+
+@media screen and (max-width: 430px) {
+
+  .pc-only {
+    display: none !important;
+  }
+
+  .sp-only {
+    display: block !important;
+  }
+
+  h1 {
+      font-size: 25px;
+      letter-spacing: 1px;
+      padding: 18px;
+    }
+
+  h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 5px;
+    margin-top: 14px;
+  }
+
+  h3 {
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1.3px;
+  }
+
+  .square {
+    width: 370px;
+    height: 80px;
+  }
+
+  img.charm {
+    width: 300px;
+    height: 250px;
+  }
+
+  .section-inner {
+    max-width: 430px;
+    margin: 0 auto;
+  }
+
+  .slide {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  img.cafe {
+    width: 175px;
+    height: 230px;
+  }
+  .col-2 {
+    display: block;
+  }
+
+  .col-3 {
+    display: block;
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .card {
+    margin-top: 10%;
+    height: 360px;
+  }
+
+  .card .card-text {
+    width: 115px;
+    height: 150px;
+    border-radius: 5px;
+  }
+
+  p.large {
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .col-3 .item {
+    width: calc((375px - 80px)/3 - 16px);
+  }
+
+  p.medium {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+ }
+
+  h4 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 20px;
+    margin-top: 14px;
+  }
+
+  h5 {
+    font-size: 18px;
+    letter-spacing: 5px;
+  }
+
+  p.small {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+    letter-spacing: inherit;
+ }
+
+  p.cafe {
+    font-size: 12px;
+    letter-spacing: 0.00em;
+    line-height: 30px;
+    width: 300px;
+    min-width: 0;
+    margin-left: 15%;
+    padding: 5% 0%;
+  }
+
+  p.cafe span {
+    display: inline-block;
+  }
+
+  p.memo {
+    font-size: 12px;
+    letter-spacing: 0.07em;
+    line-height: 25px;
+  }
+
+  ul {
+    margin-top: 5%;
+    padding: 4% 29%;
+    text-align: left;
+    color: #4e3101;
+    background: #d1c0a5;
+  }
+
+  li {
+    font-size: 18px;
+    height: 50px;
+    background: #d1c0a5;
+    text-align: left;
+    line-height:55px;
+  }
+
+  .square2 {
+    height: 270px;
+  }
+
+  a {
+    display: inline-block;
+    font-size: 18px;
+    color: #4e3101;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin: auto;
+    text-align: center;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: #d1c0a5;
+  }
+
+  #instagram-button {
+    font-size: 12px;
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+    color: #d1c0a5 !important;
+    font-size: 30px !important;
+    width: 0 !important;
+  }
+
+  .slick-next {
+    right: -50px !important;
+  }
+
+  #page-top {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 16px;
+    height: 225px;
+    padding: 10% 0%;
+  }
+}
